@@ -17,7 +17,7 @@
 		    	if (!$selected_theme ) {
 		    		$selected_theme  = "github.css" ;
 		    	}
-		    	$root_theme_url = './qa-plugin/'.AMI_CODE_PRETTYFY_DIR_NAME.'/assets/css/' ;
+		    	$root_theme_url = '../qa-plugin/'.AMI_CODE_PRETTYFY_DIR_NAME.'/assets/css/' ;
 		    	$theme_url = $root_theme_url . $selected_theme ;
 				$this->output('<link rel="stylesheet" href="'.$theme_url.'">');
 				//$this->output('<style>','.prettyprint {overflow-y: scroll;}','</style>');
@@ -27,7 +27,7 @@
 		function head_script()
 		{
 			if ($this->template == 'question' && qa_opt(qa_code_prettify_admin::PLUGIN_ENABLED)) {
-			    $js_url = './qa-plugin/'.AMI_CODE_PRETTYFY_DIR_NAME.'/assets/js/prettify.js' ;
+			    $js_url = '../qa-plugin/'.AMI_CODE_PRETTYFY_DIR_NAME.'/assets/js/prettify.js' ;
 				if (!isset($this->content['script']['prettyfy_script'])) {
 					$this->content['script']['prettyfy_script'] = '<script src="'.$js_url.'" type="text/javascript"></script>' ;
 				}
