@@ -5,7 +5,10 @@
   /* font-family: Menlo, "Bitstream Vera Sans Mono", "DejaVu Sans Mono", Monaco, Consolas, monospace; */
   font-family: 'Nanum Gothic Coding', monospace;
   border: 0 !important;
-  padding: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
   border-radius: 10px;
 }
 
