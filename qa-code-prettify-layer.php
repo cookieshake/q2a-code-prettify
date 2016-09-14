@@ -20,7 +20,7 @@
 		    	$root_theme_url = qa_opt('site_url').'qa-plugin/'.AMI_CODE_PRETTYFY_DIR_NAME.'/assets/css/' ;
 		    	$theme_url = $root_theme_url . $selected_theme ;
 				$this->output('<link rel="stylesheet" href="'.$theme_url.'">');
-				$this->output('<style>','.prettyprint {overflow-y: scroll;}','</style>');
+				//$this->output('<style>','.prettyprint {overflow-y: scroll;}','</style>');
 			}
 		}
 
@@ -38,10 +38,10 @@
 		{
 			qa_html_theme_base::body_script();
 			if ($this->template == 'question' && qa_opt(qa_code_prettify_admin::PLUGIN_ENABLED)) {
-				/* $this->output(
+					$this->output(
 					'<script type="text/javascript">',
 					'$(document).ready(function() {	prettyPrint();});' , '</script>'
-				); */
+				);
 			}
 		}
 	}
