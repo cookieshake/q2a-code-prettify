@@ -9,7 +9,7 @@
 	require_once QA_INCLUDE_DIR.'qa-app-users.php';
 
 	class qa_html_theme_layer extends qa_html_theme_base {
-		
+
 		function head_css() {
 			qa_html_theme_base::head_css();
 			if ($this->template == 'question' && qa_opt(qa_code_prettify_admin::PLUGIN_ENABLED)) {
@@ -38,10 +38,10 @@
 		{
 			qa_html_theme_base::body_script();
 			if ($this->template == 'question' && qa_opt(qa_code_prettify_admin::PLUGIN_ENABLED)) {
-				$this->output(
+				/* $this->output(
 					'<script type="text/javascript">',
 					'$(document).ready(function() {	prettyPrint();});' , '</script>'
-				);
+				); */
 			}
 		}
 	}
